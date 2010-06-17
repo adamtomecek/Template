@@ -1,0 +1,122 @@
+<div id="border">
+<div>
+	<div class="left">
+		<h2>Foreach example</h2>
+		{comment}
+			if array exists or is not empty
+		{/comment}
+		{if $array}
+			{foreach $array as $key => $value}
+				{$key} => {$value}<br />
+			{/foreach}
+		{else}
+			{/*}if is empty, write it{*/}
+			<p>Array is empty!</p>
+		{/if}
+	</div>
+	<div class="right">
+		<h2>Template code</h2>
+<pre class="php"><code>{<span 
+class="php-keyword1">if</span> <span 
+class="php-var">$array}</span> 
+	{<span 
+class="php-keyword1">foreach</span> <span class="php-var">$array</span> <span 
+class="php-keyword1">as</span> <span class="php-var">$key</span> =&gt; <span 
+class="php-var">$value}</span> 
+		{<span 
+class="php-var">$key}</span> =&gt; {<span 
+class="php-var">$value}</span>&lt;br /&gt;
+	{/<span 
+class="php-keyword1">foreach</span>}
+{<span 
+class="php-keyword1">else</span>}
+        &lt;p&gt;<span 
+class="php-keyword2">Array</span> is <span 
+class="php-keyword2">empty</span>!&lt;/p&gt;
+{/<span 
+class="php-keyword1">if</span>}
+</code></pre> 
+	</div>
+	
+	<br class="clear" />
+	
+</div>
+<div>
+	<div class="left">	
+		<h2>While example</h2>
+		{$i = 1}
+		{while $i < $j}
+			Cycle no. {$i}<br />
+			{$i++}
+		{/while}
+	</div>
+	<div class="right">
+		<h2>Template code</h2>
+		<pre class="php"><code>{<span 
+class="php-var">$i</span> = <span class="php-num">1</span>}
+{<span 
+class="php-keyword1">while</span> <span class="php-var">$i</span> &lt; <span 
+class="php-var">$j}</span> 
+        Cycle no. {<span 
+class="php-var">$i}</span>&lt;br /&gt;
+        {<span 
+class="php-var">$i</span>++}
+{/<span class="php-keyword1">while</span>}</code></pre>
+	</div>
+	
+	<br class="clear" />
+	
+</div>
+<div>
+<h2>Example code</h2>
+<pre class="php"><code><span class="xlang">&lt;?php</span> 
+<span 
+class="php-keyword1">require_once</span> <span 
+class="php-quote">'../Template.php'</span>;
+ 
+<span 
+class="php-var">$template</span> = <span 
+class="php-keyword1">new</span> Template();
+ 
+<span 
+class="php-comment">/* or
+$template = new Template('index.phtml', '@layout.phtml');
+*/</span> 
+ 
+<span 
+class="php-var">$template</span>-&gt;title = <span 
+class="php-quote">&quot;Variable example&quot;</span>;
+ 
+<span 
+class="php-var">$template</span>-&gt;<span 
+class="php-keyword2">array</span> = <span 
+class="php-keyword2">array</span>(
+        <span 
+class="php-quote">'1'</span> =&gt; <span 
+class="php-quote">&quot;First array item&quot;</span>,
+        <span 
+class="php-quote">'2'</span> =&gt; <span 
+class="php-quote">&quot;Second array item&quot;</span>,
+        <span 
+class="php-quote">'n'</span> =&gt; <span 
+class="php-quote">&quot;N-th array item&quot;</span>,
+);
+ 
+<span 
+class="php-var">$template</span>-&gt;j = <span class="php-num">5</span>;
+ 
+<span 
+class="php-comment">//fluent interface
+</span><span 
+class="php-var">$template</span>-&gt;setFile(<span 
+class="php-quote">'index.phtml'</span>)-&gt;setLayout(<span 
+class="php-quote">'@layout.phtml'</span>)-&gt;render();
+ 
+<span 
+class="php-comment">/* or
+$template-&gt;setup('index.phtml', '@layout.phtml')-&gt;render();
+*/</span> 
+<span 
+class="xlang">?&gt;</span></code></pre>
+</div>
+</div>

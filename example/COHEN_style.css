@@ -1,0 +1,90 @@
+/* P H P */
+.php {color:#000}
+.php-keyword1 {color:#d24; font-weight:bold;}
+.php-keyword2 {color:#d24; }
+.php-var {color:#0066BB; font-weight:bold;}
+.php-num {color:red;}
+.php-quote {color:#d24; }
+.php-vquote {color:#0F0; font-weight:bold; }
+.php-comment {color:#009900; }
+
+/* H T M L */
+.html-tag {color:#598527; font-weight:bold;}
+.html-tagin {color:#89A315}
+.html-quote {color: #448CCB; font-weight: bold;}
+.html-comment {color:#777; }
+.html-entity {color:#89A315}
+
+/* C S S */
+.css-class {color:#004A80; }
+.css-id {color:#7DA7D9; font-weight:bold; }
+.css-def {color:#5674B9;}
+.css-property {color:#003663; font-weight:bold; }
+.css-value {color:#448CCB;}
+.css-color {color:#080;}
+.css-comment {color: #777; font-style: italic;}
+
+/* C P P */
+.cpp-keywords1 {color:blue; font-weight:bold;}
+.cpp-num {color:red;}
+.cpp-quote {color:brown; font-weight:bold;}
+.cpp-comment {color:green;}
+.cpp-preproc {color:grey;}
+
+/* J A V A */
+.java-keywords1 {color:blue; font-weight:bold;}
+.java-num {color:red;}
+.java-quote {color:brown; font-weight:bold;}
+.java-comment {color:#777;}
+.java-preproc {color:grey;}
+
+/* J a v a S c r i p t */
+.js-out {color: #000;}
+.js-keywords1 {color: #0066BB; font-weight: bold;}
+.js-num {color: red;}
+.js-quote {color: #BB1111;}
+.js-comment {color: #777; font-style: italic;}
+
+/* S Q L */
+.sql-keyword1 {color: #DD0000; font-weight: bold;}
+.sql-keyword2 {color: #DD2222;}
+.sql-keyword3 {color: #0000FF; font-weight: bold;}
+.sql-value {color: #5674B9;}
+.sql-comment {color: #777;}
+.sql-num {color:#5674B9; font-weight: bold;}
+.sql-option {color: #004A80; font-weight: bold;}
+
+/* P y t h o n */
+.py-keyword1 {color: #0033CC; font-weight: bold;}
+.py-keyword2 {color: #CE3333; font-weight: bold;}
+.py-keyword3 {color: #660066; font-weight: bold;}
+.py-number {color: #993300;}
+.py-docstring {color: #E86A18;}
+.py-quote {color: #878787; font-weight: bold;}
+.py-comment {color: #777; font-style: italic;}
+
+/* T E X Y */
+.texy-hlead {color:#44B; font-weight:bold;}			/* header leadIN == and leadOUT == */
+.texy-hbody {background-color:#eeF;color:#44B; }	/* header body */
+.texy-hr {color:#B44; }								/* horizontal line */
+
+.texy-code {color:#666;}							/* /---code */
+.texy-html {color:#6a6;}							/* /---html */
+.texy-text {color:#66a;}							/* /---html */
+
+.texy-err {background-color:red; color:white;}		/* error (TODO) */
+
+
+/* C O M M O N */
+.normal {color:black;}
+.xlang {color:red; font-weight:bold;}
+.count {color:black; background-color:#FFF;}
+
+pre {
+	width: 100%;
+    background: #EEE;
+    padding: 5px;
+    margin: 5px;
+	border: 1px dashed #DDD;
+	   
+}

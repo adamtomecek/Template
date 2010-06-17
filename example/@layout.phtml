@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+	<title>Template{if isset($title)} - {$title}{/if}</title>
+
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="COHEN_style.css" type="text/css">
+</head>
+
+<body>
+	<div id="header">
+		<div id="logo">
+			<h1>Template example</h1>
+			<h2>{if isset($title)}{$title}{else}Title is empty :-){/if}</h2>
+		</div>
+	</div>
+	{$this->renderContent()}
+	<div id="footer">
+		<div id="footercontent">
+			<p>&copy; 2010 <a href="http://opicinoviny.cz">Adam Tomeček</a>. Inspired by <a href="http://nette.org">Nette framework</a> <a href="http://doc.nette.org/en/sablony/latte-filter">Latte filter</a>. All rights reserved.</p>
+		</div>
+	</div>
+</body>
+</html>
