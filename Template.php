@@ -3,7 +3,10 @@
  * Template.php
  * 
  * Třída pro generování šablon využívající funkce eval
- * Class for template generating using eval funckion
+ * Class for template generating using eval function
+ * 
+ * Licencováno pod New BSD licencí 
+ * Licenced under the New BSD License
  * 
  * Inspirováno Latte filtrem Nette frameworku (www.nette.org/cs) 
  * Inspired by Nette framework's Latte filter (www.nette.org/en)
